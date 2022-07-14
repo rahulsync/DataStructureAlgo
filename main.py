@@ -1,11 +1,13 @@
-from binary_search import binary_search
+from binary_search_rec import binary_search_rec
 
 # Test array
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-x = 8
+arr = [2, 3, 4, 10, 40]
+x = 10
 
 # Function call
-result = binary_search(arr, x)
+
+
+result = binary_search_rec(arr, 0, len(arr) - 1, x)
 
 if result != -1:
     print("Element is present at index", str(result))
